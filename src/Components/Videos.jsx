@@ -6,7 +6,7 @@ import Loader from "./Loader";
 
 function Videos({ videos, direction }) {
   if (!videos?.length) return <Loader />;
-  console.log(videos)
+ 
   return (
     <Stack direction={direction || "row"} flexWrap="wrap" justifyContent="start" alignItems="start" gap={2}>
       {videos.map((item, idx) => (
